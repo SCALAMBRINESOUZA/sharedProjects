@@ -1,2 +1,1 @@
-# Projetos
-Este repositorio destina-se a apresentação dos projetos propostos pela Trybe
+# Hello sejam bem vindos sou o Carlos Henrique estudante de desenvolvimento web
