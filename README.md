@@ -1,2 +1,2 @@
 # Projetos
-Primeiro projeto para usar os conceitos basicos de HTML E CSS e HTML semantico
+Este repositorio destina-se a apresentação dos projetos propostos pela Trybe
