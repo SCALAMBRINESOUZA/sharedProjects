@@ -29,3 +29,23 @@ section ul li {
     margin: 10px;
     position: relative;
 }
+
+#artigo {
+    position: relative;
+    margin-left: 500px;
+    bottom: 300px;
+}
+
+#artigo textarea {
+    width: 500px;
+    height: 170px;
+    font-family: cursive;
+    font-size: 20px;
+    background-color: silver;
+    color:slateblue
+}
+
+h3 {
+    color: tan;
+    text-align: justify;
+}
