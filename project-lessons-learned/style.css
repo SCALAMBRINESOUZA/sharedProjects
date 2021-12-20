@@ -17,3 +17,9 @@ section ol li {
     top: 280px;
     position: relative;
 }
+
+section ul li {
+    margin-left: 300px;
+    top: 80px;
+    position: relative;
+}
