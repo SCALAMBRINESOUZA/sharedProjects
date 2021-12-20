@@ -32,7 +32,7 @@ section ul li {
 
 #artigo {
     position: relative;
-    margin-left: 500px;
+    margin-left: 350px;
     bottom: 300px;
 }
 
@@ -42,12 +42,22 @@ section ul li {
     font-family: cursive;
     font-size: 20px;
     background-color: silver;
-    color:slateblue
+    color:slateblue;
+    float: inline-start;
 }
 
-h3 {
+label {
+    bottom: 200px;
+    position: relative;
+    color:tan;
+    font-weight: 800;
+    font-size: 20px;
+    left: 310px;
+}
+
+h2 {
     color: tan;
-    text-align: justify;
+    margin: 5px;
 }
 
 aside {
@@ -55,6 +65,9 @@ aside {
     border: teal solid 1px;
     position: relative;
     left: 1100px;
-    bottom: 650px;
-    margin: 50px;
+    bottom: 550px;
+}
+
+p {
+    margin: 5px;
 }
