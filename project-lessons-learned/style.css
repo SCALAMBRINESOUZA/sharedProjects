@@ -12,3 +12,8 @@ body {
     position: absolute;
     top: 70px;
 }
+
+section ol li {
+    top: 280px;
+    position: relative;
+}
