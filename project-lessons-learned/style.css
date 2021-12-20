@@ -1,3 +1,25 @@
 body {
     background-color: rgb(253, 251, 251);
 }
+
+#cabecalho {
+    top: 0;
+    position: fixed;
+}
+
+#minha_foto {
+    width: 150px;
+    position: absolute;
+    top: 70px;
+}
+
+section ol li {
+    top: 280px;
+    position: relative;
+}
+
+section ul li {
+    margin-left: 300px;
+    top: 80px;
+    position: relative;
+}
