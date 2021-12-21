@@ -1,39 +1,96 @@
-body {
+ body {
     background-color: rgb(253, 251, 251);
-}
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+} 
 
-#cabecalho {
+ #cabecalho {
     top: 0;
     position: fixed;
+    left: 450px;
+    color:darkgoldenrod;
+    margin: 15px;
+}
+
+ div {
+   height: 100px;
+   background-color:rgb(56, 138, 254);
 }
 
 #minha_foto {
     width: 150px;
     position: absolute;
-    top: 70px;
+    top: 200px;    
+
 }
 
 section ol li {
-    top: 280px;
+    bottom: 280px;
     position: relative;
+    margin-left: 570px;
+    border: 2px dashed black;
+    width: 130px;
+    text-align: center;
+
+}
+
+#tituloLol {
+    bottom: 270px;
+    position: relative;
+    margin-left: 570px;
+}
+
+span img {
+    bottom: 780px;
+    position: relative;
+    margin-left: 470px;
+}
+
+#img img {
+    position: relative;
+    bottom: 100px;
+    margin-left: 800px;
 }
 
 section ul li {
-    margin-left: 300px;
-    top: 80px;
+    margin-left: 900px;
+    bottom: 590px;
     position: relative;
+    border: dashed 2px gray;
+    width: 130px;
+    text-align: center;
+}
+
+#tituloLul {
+    bottom: 580px;
+    position: relative;
+    margin-left: 900px;
 }
 
 #rodape {
-    bottom: 500px;
+    bottom: 650px;
     margin: 10px;
     position: relative;
+    text-align: center;
+    font-size: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightgreen;
+    color: khaki;
+    transition: 3s;
 }
 
 #artigo {
     position: relative;
-    margin-left: 350px;
-    bottom: 300px;
+    margin-left: 220px;
+    bottom: 345px;
+
 }
 
 #artigo textarea {
@@ -62,12 +119,20 @@ h2 {
 
 aside {
     max-width: 150px;
-    border: teal solid 1px;
     position: relative;
-    left: 1100px;
-    bottom: 550px;
+    left: 1180px;
+    top: 20px;
+    background-color: khaki;
+    color:lime;
+    text-align: center;
+    
 }
 
 p {
     margin: 5px;
+}
+
+#table {
+    bottom: 940px;
+    position: relative;
 }
