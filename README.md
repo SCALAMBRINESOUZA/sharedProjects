@@ -1,4 +1,4 @@
-# Hello sejam bem vindos sou o Carlos Henrique estudante de desenvolvimento web
+# Olá sejam bem vindos sou o Carlos Henrique estudante de desenvolvimento web
 <p>Este repositório é para demonstrar minhas habilidades atraves de projetos</p>
 
 ## projeto lessons learned 
