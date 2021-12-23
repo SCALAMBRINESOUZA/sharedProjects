@@ -9,7 +9,7 @@
     top: 0;
     position: fixed;
     left: 450px;
-    color:darkgoldenrod;
+    color:white;
     margin: 15px;
 }
 
@@ -122,7 +122,7 @@ aside {
     position: relative;
     left: 1180px;
     top: 20px;
-    background-color: khaki;
+    background-color: black;
     color:lime;
     text-align: center;
     
