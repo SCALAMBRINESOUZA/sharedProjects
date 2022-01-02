@@ -19,8 +19,18 @@ function splitSentence(phrase) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(arrayOfString) {
+  // const lastPosition = arrayOfString[arrayOfString.length - 1];
+  // const firstPosition = arrayOfString[0];
+  // const nameConcat = `${lastPosition}, ${firstPosition} `;
+  // return nameConcat;
+
+  // const first = [...arrayOfString].shift();
+  // const last = [...arrayOfString].pop();
+  // return `${last}, ${first}`;
+
+  const { length, 0: first, [length - 1]: last } = arrayOfString;
+  return `${last}, ${first}`;
 }
 
 // Desafio 5
