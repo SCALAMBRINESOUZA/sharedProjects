@@ -7,9 +7,12 @@ function compareTrue(n1, n2) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  const triangle = (base * height) / 2;
+  return triangle;
 }
+
+console.log(calcArea(51, 1));
 
 // Desafio 3
 function splitSentence() {
