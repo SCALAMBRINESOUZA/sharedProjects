@@ -1,10 +1,11 @@
 // Desafio 1
-function compareTrue(n1, n2) {
-  if (n1 > 5 && n2 > 10) {
+function compareTrue(n1, n2, n3 = 5) {
+  if (n1 > n3 && n2 > n3) {
     return true;
   }
   return false;
 }
+console.log(compareTrue(5, 5));
 
 // Desafio 2
 function calcArea(base, height) {
