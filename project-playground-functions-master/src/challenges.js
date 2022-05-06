@@ -1,52 +1,81 @@
 // Desafio 1
-function compareTrue(n1, n2) {
-  if (n1 > 5 && n2 > 10) {
+
+function compareTrue(n1, n2, n3 = 5) {
+  if (n1 > n3 && n2 > n3) {
     return true;
   }
   return false;
 }
 
 // Desafio 2
+
 function calcArea(base, height) {
   const triangle = (base * height) / 2;
   return triangle;
 }
 
 // Desafio 3
+
 function splitSentence(phrase) {
   const wordWithSplit = phrase.split(' ');
   return wordWithSplit;
 }
 
 // Desafio 4
+
 function concatName(arrayOfString) {
-  // const lastPosition = arrayOfString[arrayOfString.length - 1];
-  // const firstPosition = arrayOfString[0];
-  // const nameConcat = `${lastPosition}, ${firstPosition} `;
-  // return nameConcat;
+// arrayOfString.splice(1, 1);
+// arrayOfString.splice(1, 2);
+// arrayOfString.reverse();
+// return arrayOfString;
+// const lastPosition = arrayOfString[arrayOfString.length - 1];
+// const firstPosition = arrayOfString[0];
+// const nameConcat = `${lastPosition}, ${firstPosition} `;
+// return nameConcat;
 
   // const first = [...arrayOfString].shift();
   // const last = [...arrayOfString].pop();
   // return `${last}, ${first}`;
 
-  const { length, 0: first, [length - 1]: last } = arrayOfString;
-  return `${last}, ${first}`;
+  // const { length, 0: first, [length - 1]: last } = arrayOfString;
+  // return `${last}, ${first}`;
+  return arrayOfString;
 }
 
 // Desafio 5
 function footballPoints(wins, ties) {
-  // const pointWin = wins * 3;
-  // const pointTie = ties * 1;
-  // const points = pointWin + pointTie;
-  // return points;
-  const points = (wins * 3) + ties;
+  const pointWin = wins * 3;
+  const pointTie = ties * 1;
+  const points = pointWin + pointTie;
   return points;
+  // const points = (wins * 3) + ties;
+  // return points;
 }
+// console.log(footballPoints(0, 0));
 
-// Desafio 6
-function highestCount() {
+// Desafio 6, the equality function it's a function assistant for question of complexity
+
+const equality = (numbers) => {
+  let maxNumber = numbers[0];
+  for (let number in numbers) {
+    if (numbers[number] > maxNumber) {
+      maxNumber = numbers[number];
+    }
+  }
+  return maxNumber;
+};
+
+function highestCount(numbers) {
   // seu código aqui
+  let count = 0;
+  for (let index in numbers) {
+    if (numbers[index] === equality(numbers)) {
+      count += 1;
+    }
+  }
+  return count;
 }
+console.log(highestCount([9, 1, 13, 13, 13, 9, 5, 7]));
 
 // Desafio 7
 function catAndMouse() {
