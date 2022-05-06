@@ -51,11 +51,31 @@ function footballPoints(wins, ties) {
   // const points = (wins * 3) + ties;
   // return points;
 }
-console.log(footballPoints(0, 0));
-// Desafio 6
-function highestCount() {
+// console.log(footballPoints(0, 0));
+
+// Desafio 6, the equality function it's a function assistant for question of complexity
+
+const equality = (numbers) => {
+  let maxNumber = numbers[0];
+  for (let number in numbers) {
+    if (numbers[number] > maxNumber) {
+      maxNumber = numbers[number];
+    }
+  }
+  return maxNumber;
+};
+
+function highestCount(numbers) {
   // seu código aqui
+  let count = 0;
+  for (let index in numbers) {
+    if (numbers[index] === equality(numbers)) {
+      count += 1;
+    }
+  }
+  return count;
 }
+console.log(highestCount([9, 1, 13, 13, 13, 9, 5, 7]));
 
 // Desafio 7
 function catAndMouse() {
