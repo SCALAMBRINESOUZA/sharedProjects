@@ -75,13 +75,31 @@ function highestCount(numbers) {
   }
   return count;
 }
-console.log(highestCount([9, 1, 13, 13, 13, 9, 5, 7]));
+// console.log(highestCount([9, 1, 13, 13, 13, 9, 5, 7]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(cat1, cat2, mouse) {
+  // let positionCat1 = Math.abs(cat1 - mouse);
+  // let positionCat2 = Math.abs(cat2 - mouse);
+
+  // if (positionCat1 < positionCat2) {
+  //   return 'cat1';
+  // }
+
+  // if (positionCat2 < positionCat1) {
+  //   return 'cat2';
+  // }
+  // return 'os gatos trombam e o rato foge.';
+  cat1 -= mouse;
+  cat2 -= mouse;
+  if (Math.abs(cat1) === Math.abs(cat2)) {
+    return 'Os gatos trombam e o rato foge';
+  }
+
+  return Math.abs(cat1) < Math.abs(cat2) ? 'cat1' : 'cat2';
 }
 
+console.log(catAndMouse(-1, -16, -18));
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
