@@ -99,12 +99,33 @@ function catAndMouse(cat1, cat2, mouse) {
   return Math.abs(cat1) < Math.abs(cat2) ? 'cat1' : 'cat2';
 }
 
-console.log(catAndMouse(-1, -16, -18));
+// console.log(catAndMouse(-1, -1 6, -18));
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+
+function values(value) {
+  let storage = '';
+  storage = value % 3 === 0 ? 'fizz' : storage;
+  storage = value % 5 === 0 ? 'buzz' : storage;
+  storage = value % 3 === 0 && value % 5 === 0 ? 'fizzBuzz' : storage;
+  return storage;
 }
 
+function ForInValues(array) {
+  let newArray = [];
+  let returnValues = '';
+  for (let arr = 0; arr < array.length; arr += 1) {
+    returnValues = values(array[arr]);
+    newArray.push(returnValues.length === 0 ? 'bug'
+      : returnValues);
+  }
+  return newArray;
+}
+
+function fizzBuzz(vector) {
+  let finished = ForInValues(vector);
+  return finished;
+}
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9
 function encode() {
   // seu código aqui
