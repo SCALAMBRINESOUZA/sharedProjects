@@ -125,14 +125,38 @@ function fizzBuzz(vector) {
   let finished = ForInValues(vector);
   return finished;
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
+// console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9
-function encode() {
+
+const assistantEncode = (phrase) => {
+  let newPhrase = phrase.replace(/(a)/gi, 1);
+  newPhrase = newPhrase.replace(/(e)/gi, 2);
+  newPhrase = newPhrase.replace(/(i)/gi, 3);
+  newPhrase = newPhrase.replace(/(o)/gi, 4);
+  newPhrase = newPhrase.replace(/(u)/gi, 5);
+  return newPhrase;
+};
+
+const assistantDecode = (number) => {
+  let newNumber = number.replace(/(1)/gi, 'a');
+  newNumber = newNumber.replace(/(2)/gi, 'e');
+  newNumber = newNumber.replace(/(3)/gi, 'i');
+  newNumber = newNumber.replace(/(4)/gi, 'o');
+  newNumber = newNumber.replace(/(5)/gi, 'u');
+  return newNumber;
+};
+
+function encode(word) {
   // seu código aqui
+  return assistantEncode(word);
 }
-function decode() {
+// console.log(encode('hi there!'));
+
+function decode(number) {
   // seu código aqui
+  return assistantDecode(number);
 }
+// console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
