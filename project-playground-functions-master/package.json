@@ -12,6 +12,7 @@
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js, .jsx"
   },
   "dependencies": {
+    "bootbox": "^5.5.3",
     "collect.js": "^4.33.0",
     "eslint-config-trybe-fundamentals": "1.1.0"
   }

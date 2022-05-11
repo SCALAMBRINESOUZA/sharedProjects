@@ -1,6 +1,6 @@
 // Desafio 10
 function techList(techs = [], name) {
-  // seu código aqui
+//   // seu código aqui
   if (techs.length === 0) {
     return 'Vazio!';
   }
@@ -23,10 +23,14 @@ console.log(techList());
 function generatePhoneNumber() {
   // seu código aqui
 }
-
 // Desafio 12
-function triangleCheck() {
+function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
+  if (lineA < Math.abs(lineB + lineC)
+    && lineB < Math.abs(lineA + lineC)
+    && lineC < Math.abs(lineA + lineB)) {
+    return true;
+  } return false;
 }
 
 // Desafio 13
