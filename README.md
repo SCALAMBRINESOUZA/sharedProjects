@@ -1,5 +1,5 @@
 # Olá sejam bem vindos sou o Carlos Henrique estudante de desenvolvimento web
-<p>Este repositório é para demonstrar minhas skills atraves de projetos</p>
+### <p>Este repositório é para demonstrar minhas skills atraves dos projetos prepostos</p>
 
 ## Projeto lessons learned 
 ### Foi feito usando as seguintes skills:
