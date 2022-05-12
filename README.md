@@ -8,9 +8,12 @@
   <b><em><li>HTML-Semântico</li></em></b>
   <b><em><li>CSS</li></em></b>  
 </ul>
-## Projeto playground functions
-### Foi feito usando as seguintes skills:
+
+##  Projeto playground functions
+###  Foi feito usando as seguintes skills:
 <ul>
-  <b><em><li>JavaScript Array e loop for</li></em></b>
+  <b><em><li>JAVA SCRIPT Array e loop for</li></em></b>
+  <b><em><li>Lógica de programação e algoritmos</li></em></b>
+  <b><em><li>JAVA SCRIPT objetos e funções</li></em></b>
 </ul>
 
