@@ -75,25 +75,88 @@ function highestCount(numbers) {
   }
   return count;
 }
-console.log(highestCount([9, 1, 13, 13, 13, 9, 5, 7]));
+// console.log(highestCount([9, 1, 13, 13, 13, 9, 5, 7]));
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(cat1, cat2, mouse) {
+  // let positionCat1 = Math.abs(cat1 - mouse);
+  // let positionCat2 = Math.abs(cat2 - mouse);
+
+  // if (positionCat1 < positionCat2) {
+  //   return 'cat1';
+  // }
+
+  // if (positionCat2 < positionCat1) {
+  //   return 'cat2';
+  // }
+  // return 'os gatos trombam e o rato foge.';
+  cat1 -= mouse;
+  cat2 -= mouse;
+  if (Math.abs(cat1) === Math.abs(cat2)) {
+    return 'Os gatos trombam e o rato foge';
+  }
+
+  return Math.abs(cat1) < Math.abs(cat2) ? 'cat1' : 'cat2';
 }
 
+// console.log(catAndMouse(-1, -1 6, -18));
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+
+function values(value) {
+  let storage = '';
+  storage = value % 3 === 0 ? 'fizz' : storage;
+  storage = value % 5 === 0 ? 'buzz' : storage;
+  storage = value % 3 === 0 && value % 5 === 0 ? 'fizzBuzz' : storage;
+  return storage;
 }
 
+function ForInValues(array) {
+  let newArray = [];
+  let returnValues = '';
+  for (let arr = 0; arr < array.length; arr += 1) {
+    returnValues = values(array[arr]);
+    newArray.push(returnValues.length === 0 ? 'bug'
+      : returnValues);
+  }
+  return newArray;
+}
+
+function fizzBuzz(vector) {
+  let finished = ForInValues(vector);
+  return finished;
+}
+// console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9
-function encode() {
+
+const assistantEncode = (phrase) => {
+  let newPhrase = phrase.replace(/(a)/gi, 1);
+  newPhrase = newPhrase.replace(/(e)/gi, 2);
+  newPhrase = newPhrase.replace(/(i)/gi, 3);
+  newPhrase = newPhrase.replace(/(o)/gi, 4);
+  newPhrase = newPhrase.replace(/(u)/gi, 5);
+  return newPhrase;
+};
+
+const assistantDecode = (number) => {
+  let newNumber = number.replace(/(1)/gi, 'a');
+  newNumber = newNumber.replace(/(2)/gi, 'e');
+  newNumber = newNumber.replace(/(3)/gi, 'i');
+  newNumber = newNumber.replace(/(4)/gi, 'o');
+  newNumber = newNumber.replace(/(5)/gi, 'u');
+  return newNumber;
+};
+
+function encode(word) {
   // seu código aqui
+  return assistantEncode(word);
 }
-function decode() {
+// console.log(encode('hi there!'));
+
+function decode(number) {
   // seu código aqui
+  return assistantDecode(number);
 }
+// console.log(decode('h3 th2r2!'));
 
 module.exports = {
   calcArea,
