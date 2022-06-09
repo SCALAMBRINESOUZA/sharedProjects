@@ -22,8 +22,8 @@ for (let i = 0; i < 4; i += 1) {
 
 const divs = document.getElementsByClassName('color');
 for (let i = 0; i < divs.length; i += 1) {
-  divs[0].style.background = 'red';
+  divs[0].style.background = 'black';
   divs[1].style.background = 'yellow';
   divs[2].style.background = 'green';
-  divs[3].style.background = 'magenta';
+  divs[3].style.background = 'red';
 }
