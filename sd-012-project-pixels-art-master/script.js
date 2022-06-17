@@ -39,8 +39,8 @@ for (let cl = 0; cl < 5; cl += 1) {
     row.setAttribute('class', 'pixel');
     row.appendChild(column);
     column.style.border = '1px solid black';
-    column.style.width = '50px';
-    column.style.height = '50px';
+    column.style.width = '40px';
+    column.style.height = '40px';
   }
   square.appendChild(row);
 }
