@@ -1,0 +1,9 @@
+#color-palette {
+  display: flex;
+  flex-direction: row;
+}
+
+#pixel-board {
+  margin: 10px;
+}
+
