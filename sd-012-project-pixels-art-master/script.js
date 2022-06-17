@@ -27,3 +27,20 @@ for (let i = 0; i < divs.length; i += 1) {
   divs[2].style.background = 'green';
   divs[3].style.background = 'red';
 }
+
+const square = document.createElement('table');
+square.setAttribute('id', 'pixel-board');
+document.body.appendChild(square);
+
+for (let cl = 0; cl < 5; cl += 1) {
+  const row = document.createElement('tr');
+  for (let ln = 0; ln < 5; ln += 1) {
+    const column = document.createElement('td');
+    row.setAttribute('class', 'pixel');
+    row.appendChild(column);
+    column.style.border = '1px solid black';
+    column.style.width = '50px';
+    column.style.height = '50px';
+  }
+  square.appendChild(row);
+}
