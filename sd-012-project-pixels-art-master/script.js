@@ -45,6 +45,61 @@ for (let cl = 0; cl < 5; cl += 1) {
   square.appendChild(row);
 }
 
-const collorInitial = document.getElementsByClassName('color')[0];
-localStorage.setItem('class', 'selected');
-collorInitial.classList.add(localStorage.getItem('class'));
+const collorInitial = () => {
+  const blackColor = document.getElementsByClassName('color')[0];
+  localStorage.setItem('class', 'selected');
+  blackColor.classList.add(localStorage.getItem('class'));
+  divs[1].classList.remove('selected');
+  divs[2].classList.remove('selected');
+  divs[3].classList.remove('selected');
+};
+
+window.onload = collorInitial;
+
+divs[0].addEventListener('click', collorInitial);
+
+const addClassSelected = () => {
+  divs[1].addEventListener('click', (e) => {
+    e.target.classList.add(localStorage.getItem('class'));
+    divs[0].classList.remove('selected');
+    divs[2].classList.remove('selected');
+    divs[3].classList.remove('selected');
+  });
+  divs[2].addEventListener('click', (e) => {
+    e.target.classList.add(localStorage.getItem('class'));
+    divs[0].classList.remove('selected');
+    divs[1].classList.remove('selected');
+    divs[3].classList.remove('selected');
+  });
+  divs[3].addEventListener('click', (e) => {
+    e.target.classList.add(localStorage.getItem('class'));
+    divs[0].classList.remove('selected');
+    divs[1].classList.remove('selected');
+    divs[2].classList.remove('selected');
+  });
+};
+addClassSelected();
+
+const unitElement = document.getElementsByClassName('pixel');
+
+for (let i = 0; i < unitElement.length; i += 1) {
+  unitElement[i].addEventListener('click', (e) => {
+    if (divs[0].classList.contains('selected')) {
+      e.target.style.background = divs[0].style.background;
+    }
+    if (divs[1].classList.contains('selected')) {
+      e.target.style.background = divs[1].style.background;
+    }
+  });
+}
+
+for (let i = 0; i < unitElement.length; i += 1) {
+  unitElement[i].addEventListener('click', (e) => {
+    if (divs[2].classList.contains('selected')) {
+      e.target.style.background = divs[2].style.background;
+    }
+    if (divs[3].classList.contains('selected')) {
+      e.target.style.background = divs[3].style.background;
+    }
+  });
+}
