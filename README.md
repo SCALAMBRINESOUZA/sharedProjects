@@ -19,7 +19,7 @@
 </ul>
 
 
-##  Projeto Arte com pixels
+##  Projeto Art with pixels
 ###  Foi feito usando as seguintes skills:
 <ul>
   <b><em><li>DOM e seletores</li></em></b>
