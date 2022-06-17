@@ -44,3 +44,7 @@ for (let cl = 0; cl < 5; cl += 1) {
   }
   square.appendChild(row);
 }
+
+const collorInitial = document.getElementsByClassName('color')[0];
+localStorage.setItem('class', 'selected');
+collorInitial.classList.add(localStorage.getItem('class'));
