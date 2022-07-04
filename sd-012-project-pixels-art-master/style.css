@@ -1,9 +1,59 @@
+body {
+  background-color: antiquewhite;
+  width: 900px;
+}
+
+p {
+  color: blue;
+}
+
+#title {
+  margin-left: 500px;
+  color: blue;
+}
+
 #color-palette {
   display: flex;
-  flex-direction: row;
+  margin-left: 530px;
 }
+
+.color {
+  border: solid 1px black;
+  height: 40px;
+  width: 40px;
+}
+
+#choosePixel {
+  margin-left: 530px;
+}
+
+#clear-board {
+  position: absolute;
+  margin-top: -39px;
+  margin-left: 470px;
+}
+
 
 #pixel-board {
-  margin: 10px;
+  margin-left: 510px;
 }
 
+.color:nth-child( 1 ) {
+  background-color: black;
+}
+
+.color:nth-child( 3 ) {
+  background-color: red;
+}
+
+.pixel {
+  width: 40px;
+  height: 40px;
+  border: solid 1px black;
+}
+
+#generate-board {
+  margin-left: 210px;
+  position: absolute;
+  margin-top: -37px;
+}
