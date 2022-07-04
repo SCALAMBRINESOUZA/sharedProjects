@@ -1,27 +1,22 @@
-const btn = document.getElementById('teste');
-
-
-const validation = () => {
-    const input = document.getElementById('input')
-    if(input.value === '')
-        alert('Digite seu nome:') 
-};
-
-
-btn.addEventListener('click', () => {
-    const input = document.getElementById('input')
-    input.value === '' ? validation() : localStorage.setItem('name', input.value);
-});
-
-
-const h1 = document.getElementsByTagName('h1')[0];
-btn.addEventListener('dblclick', () => {
-    const input = document.getElementById('input')
-    let greeting = ''
-    const initial = h1.innerHTML
-    input.value = localStorage.getItem('name');
-    greeting = `${input.value.toUpperCase()} ${initial}`
-    h1.innerHTML = greeting;
-})
-
-window.onload = localStorage.removeItem('name');
+const inputDate = document.getElementById('date');
+const createTask = () => {
+  const btn = document.getElementById('btn-task');
+  const list = document.getElementById('list');
+  
+  btn.addEventListener('click', () => {
+    const task = document.createElement('li');
+    task.innerHTML = inputDate.value;
+    list.appendChild(task);
+      list.addEventListener('click', (e) => {
+      e.target.style.background = 'rgb(234,456,444)';
+    })
+    task.addEventListener('dblclick', (e) => {
+      e.target.style.background === 'rgb(234,456,444)'
+      e.target.style.background = 'white'
+      alert(e.target.innerHTML + " esta completado");
+    })
+    inputDate.value = ''
+    inputDate.focus()
+  })
+}
+createTask();
