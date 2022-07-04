@@ -1,0 +1,16 @@
+#teste {
+    cursor: pointer;
+}
+
+#input {
+    max-width: 90px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.first-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+}
