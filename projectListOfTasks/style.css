@@ -1,16 +1,10 @@
-#teste {
-    cursor: pointer;
+#main {
+  width: 100%;
+  max-width: 25%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#input {
-    max-width: 90px;
-    padding: 5px;
-    text-transform: uppercase;
-}
-
-.first-div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    text-align: center;
+#list {
+  list-style: lower-alpha;
 }
