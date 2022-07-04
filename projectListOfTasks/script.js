@@ -1,5 +1,6 @@
 const btn = document.getElementById('teste');
 
+
 const validation = () => {
     const input = document.getElementById('input')
     if(input.value === '')
@@ -16,7 +17,6 @@ btn.addEventListener('click', () => {
 const h1 = document.getElementsByTagName('h1')[0];
 btn.addEventListener('dblclick', () => {
     const input = document.getElementById('input')
-    input.value === ''
     let greeting = ''
     const initial = h1.innerHTML
     input.value = localStorage.getItem('name');
